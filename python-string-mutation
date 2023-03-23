@@ -1,0 +1,33 @@
+# find the number of times a sub string is appeared.
+s1 = "ACCSCDC TECDCDC"
+s2 = "cdc"
+s1 = s1.upper()
+s2 = s2.upper()
+print (s1,s2)
+res = 0
+for i in range(len(s1)):
+    if (s1[i:].startswith(s2)):
+        res += 1
+print (res)
+
+# swap the characters in a given string"
+s = "ww.EweAd.EREsssdTT"
+t = ""
+for i in range(len(s)):
+    if s[i].isupper():
+        t += s[i].lower()
+    elif s[i].islower():
+        t += s[i].upper()
+    else:
+        t += s[i]
+print (t)
+# result = WW.eWEaD.ereSSSDtt
+
+#modify the string at a given position
+s = "abracadabra"
+position = 6
+character = "x"
+l = list(s)
+l[6] = character
+print ("".join(l))
+# result = abracaxabra
